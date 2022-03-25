@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import { AppBar, IconButton, Button, Toolbar } from '@material-ui/core';
+import CartWidget from '../CartWidget/CartWidget';
 
 const navbar = () => {
   return (
@@ -9,24 +10,22 @@ const navbar = () => {
         <AppBar position='static'>
           <Toolbar>
             <IconButton edge='start' color='inherit' arial-table='menu' />
-            <Button>
+            <Button color="inherit" to='/'>
               <p>Home</p>
             </Button>
-            <Button>
+
+            <Button color="inherit" to='/'>
               <p>List</p>
             </Button>
               
-            <Button>
+            <Button color="inherit" to='/'>
               <p>More</p>
             </Button>
-            <Button>
+
+            <Button color="inherit" to='/'>
               <p>Cart</p>
             </Button>
-            
-            <Button>
-              <p>h</p>
-              <img src="../../../public/carriage64.png"  alt="" />
-            </Button>
+            <CartWidget/>
           </Toolbar>
 
         </AppBar>
