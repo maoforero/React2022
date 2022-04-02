@@ -1,10 +1,15 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react';
 
-const Count = () => {
+const Count = (stock, initial, onAdd) => {
+
+  const [count, setCount] = useState(0);
+
   return (
     <Fragment>
       <div className="container__Count--Buttons">
-
+        <div className='Count--p'>
+          <p>{count}</p>
+        </div>
         <div className="Count--Buttons">
           <button id="button--Increment">+</button>
           <button id="button--Decrement">-</button>
