@@ -9,6 +9,9 @@ const Count = () => {
           <button id="button--Increment">+</button>
           <button id="button--Decrement">-</button>
         </div>
+        <div className="Cart--Button">
+          <button id="button--Cart">Add to cart</button>
+        </div>
       </div>
     </Fragment>
   )
