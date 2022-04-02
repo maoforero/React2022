@@ -10,7 +10,7 @@ Desafios:
 * Desafío: Crear la App utilizando el CLI ✅
 * Desafío: Menú e-commerce ✅
 * Desafío: Crea tu landing ✅
-* Desafío: Contador con botón ⭕
+* Desafío: Contador con botón ✅
 * Desafío: Catálogo con MAPS y Promises ⭕
 * Desafío: Detalle de Producto ⭕
 * Primera Entrega del Proyecto Final ⚠ ⭕
@@ -22,8 +22,7 @@ Desafios:
 * Entrega del Proyecto Final ⚠ ⭕
 
 ## Preview
-
-![REACT2022](https://user-images.githubusercontent.com/42775364/160149597-9c28f9e8-2c16-4b79-8f6b-5c93ffffc07d.PNG)
+![Hnet com-image](https://user-images.githubusercontent.com/42775364/161365586-9740a14f-3559-4a40-b9d0-83b839a850eb.gif)
 
 
 
