@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Count () {
+function Count ({stock, initial}) {
     const [count, setCount] = useState(0);
 
     function addClick(){
@@ -23,11 +23,11 @@ function Count () {
         </div>
         <div className="Count--Buttons">
           <button onClick={addClick} id="button--Increment">+</button>
-          <button onClick={remClick} id="button--Decrement">-</button>
+          <button disabled={count === 0}  onClick={remClick} id="button--Decrement">-</button>
         </div>
       </div>
       <div className="Cart--Button">
-        <button onClick={msmCart} id="button--Cart">Add to cart</button>
+        <button disabled={count <= 0}  onClick={msmCart} id="button--Cart">Add to cart</button>
       </div>
     </div>
   )
