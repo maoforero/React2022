@@ -1,4 +1,5 @@
 import React from 'react'
+import Count from '../Count/Count'
 
 function Item({id, name, price, description, image}) {
   return (
@@ -10,6 +11,7 @@ function Item({id, name, price, description, image}) {
         <h2>{name}</h2>
         <p>{price}</p>
       </div>
+      <Count stock={10}/>
     </div>
   )
 }
