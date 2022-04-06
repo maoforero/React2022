@@ -8,7 +8,7 @@ export default function  ItemListContainer (){
   return (
     <div>
       <h1>CURSO DE REACT CODERHOUSE</h1>
-      <Count stock="5" initial="1"/>
+      <Count stock="5" initial="0"/>
     </div>
   )
 }
