@@ -1,7 +1,7 @@
 import React from 'react'
 import Count from '../Count/Count'
 
-function Item({id, name, price, description, image}) {
+function Item({id, name, price, image}) {
   return (
     <div key={id} className='container__item'>
       <div className="container__item--img">
@@ -16,4 +16,4 @@ function Item({id, name, price, description, image}) {
   )
 }
 
-export default Item
+export default Item;
