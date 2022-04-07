@@ -41,3 +41,5 @@ const productos = [
     description: "Descripcion del producto 6",
     https: "//random.imagecdn.app/240/240"  },
 ]
+
+export default productos;
