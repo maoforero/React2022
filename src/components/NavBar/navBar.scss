@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$font-stack:Helvetica, sans-serif;
+
+.container__navBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container__navBar--list{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  text-decoration: none
+}
+
+.navBar--list{
+  
+  list-style: none;
+  padding: 10px;
+}
+
+.navBar--list:hover{
+  background-color: aqua;
+}
