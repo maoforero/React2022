@@ -9,3 +9,5 @@ const customFetch = (time, task) => {
         reject('Error');
       }
     }, time)})};
+
+    export default customFetch;
