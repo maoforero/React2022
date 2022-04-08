@@ -1,6 +1,6 @@
 import React from 'react'
 import Count from '../Count/Count'
-import '../Item/item.css'
+import '../../Styles/components/item.css'
 
 function Item({id, name, price, image}) {
   return (

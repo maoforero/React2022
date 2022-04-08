@@ -8,7 +8,7 @@ function ItemList({ productos }) {
         key={i.id} 
         name={i.name} 
         price={i.price} 
-        img={i.image} 
+        image={i.image} 
         />
     ))
   )
