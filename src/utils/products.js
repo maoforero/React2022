@@ -4,7 +4,7 @@ const productos = [
     name: "Producto 1",
     price: '$100',
     description: "Descripcion del producto 1",
-    image: "https://random.imagecdn.app/240/240",
+    imgage: "https://images-na.ssl-images-amazon.com/images/I/81pFGLZ6puL.jpg"
   },
   {
     id: 2,

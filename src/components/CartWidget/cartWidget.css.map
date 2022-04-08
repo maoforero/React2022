@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,iBAAiB,CAAA;EACf,MAAM,EAAE,IAAI;EACZ,YAAY,EAAE,IAAI;EAClB,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,IAAI;CACZ",
     "sources": [
         "cartWidget.scss"
     ],

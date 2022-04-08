@@ -21,11 +21,15 @@ $font-stack:Helvetica, sans-serif;
 }
 
 .navBar--list{
-  
+  align-self: center;
+  display: flex;
   list-style: none;
+  justify-content: center;
   padding: 10px;
+  width: 70px;
 }
 
 .navBar--list:hover{
   background-color: aqua;
+  border-radius: 0  0 6px 6px;
 }

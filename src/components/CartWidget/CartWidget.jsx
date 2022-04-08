@@ -1,10 +1,12 @@
 import React from 'react';
-import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
+import Cart from '../../Assets/shopping-cart64.png'
+import '../CartWidget/cartWidget.css'
+
 
 const CartWidget = () => {
   return (
-    <div>
-      <ShoppingCartRoundedIcon/>
+    <div className='container__cartWidget'>
+      <img className='icon--cartWidget' src={Cart}/>
     </div>
   )
 }

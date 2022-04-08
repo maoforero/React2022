@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import customFetch from '../../utils/customFetch';
 import productos from '../../utils/products';
 import ItemList from '../ItemList/ItemList';
+import '../ItemListContainer/itemListContainer.css';
 
 function  ItemListContainer (){
 
@@ -15,9 +16,11 @@ function  ItemListContainer (){
   }, [item])
 
   return (
-    <div>
+    <div className='container__bodyItems'>
       <h1>CURSO DE REACT CODERHOUSE</h1>
-      <ItemList productos={item} />
+      <div className='container__itemList'>
+        <ItemList productos={item} />
+      </div>
     </div>
   )
 }
