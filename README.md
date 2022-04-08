@@ -11,7 +11,7 @@ Desafios:
 * Desafío: Menú e-commerce ✅
 * Desafío: Crea tu landing ✅
 * Desafío: Contador con botón ✅
-* Desafío: Catálogo con MAPS y Promises ⭕
+* Desafío: Catálogo con MAPS y Promises ✅
 * Desafío: Detalle de Producto ⭕
 * Primera Entrega del Proyecto Final ⚠ ⭕
 * Desafío: Sincronizar counter ⭕
