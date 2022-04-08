@@ -17,7 +17,7 @@ function  ItemListContainer (){
 
   return (
     <div className='container__bodyItems'>
-      <h1>CURSO DE REACT CODERHOUSE</h1>
+      <h1 className='itemList--mainTitle'>CURSO DE REACT CODERHOUSE</h1>
       <div className='container__itemList'>
         <ItemList productos={item} />
       </div>
