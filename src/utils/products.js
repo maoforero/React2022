@@ -41,6 +41,34 @@ const productos = [
     description: "Descripcion del producto 6",
     image: "https://random.imagecdn.app/240/240"
   },
+  {
+    id: 7,
+    name: "Producto 7",
+    price: '$600',
+    description: "Descripcion del producto 7",
+    image: "https://random.imagecdn.app/240/240"
+  },
+  {
+    id: 8,
+    name: "Producto 8",
+    price: '$600',
+    description: "Descripcion del producto 8",
+    image: "https://random.imagecdn.app/240/240"
+  },
+  {
+    id: 9,
+    name: "Producto 9",
+    price: '$600',
+    description: "Descripcion del producto 9",
+    image: "https://random.imagecdn.app/240/240"
+  },
+  {
+    id: 10,
+    name: "Producto 10",
+    price: '$600',
+    description: "Descripcion del producto 10",
+    image: "https://random.imagecdn.app/240/240"
+  },
 ]
 
 export default productos;

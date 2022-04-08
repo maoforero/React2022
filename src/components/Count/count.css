@@ -16,9 +16,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.button--actionItem {
-  color: red;
+.Cart--Button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+#button--Cart {
+  margin-top: 5px;
+  width: 100%;
 }
 /*# sourceMappingURL=count.css.map */

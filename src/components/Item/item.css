@@ -8,4 +8,17 @@
   height: 120px;
   width: 130px;
 }
+
+.container__item--info {
+  margin: 5px 5px 10px 5px;
+}
+
+.container__item--info h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
 /*# sourceMappingURL=item.css.map */

@@ -6,8 +6,20 @@
 .container__Count--Buttons{
   display: flex;
   flex-direction: row;
+  justify-content: space-around
+}
+
+.Cart--Button{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#button--Cart{
+  margin-top: 5px;
+  width: 100%;
 }
 
 .button--actionItem{
-  color: red;
+  ;
 }
