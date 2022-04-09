@@ -1,12 +1,12 @@
 import React from 'react';
-import Cart from '../../Assets/shopping-cart64.png'
+import Bag from '../../Assets/bag64.png'
 import '../../Styles/components/cartWidget.css'
 
 
 const CartWidget = () => {
   return (
     <div className='container__cartWidget'>
-      <img className='icon--cartWidget' src={Cart}/>
+      <img className='icon--cartWidget' src={Bag}/>
     </div>
   )
 }
