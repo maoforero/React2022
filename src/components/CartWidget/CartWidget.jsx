@@ -1,6 +1,6 @@
 import React from 'react';
 import Bag from '../../Assets/bag64.png'
-import '../../Styles/components/cartWidget.css'
+import '../../Styles/components/cartWidget/cartWidget.css'
 
 
 const CartWidget = () => {

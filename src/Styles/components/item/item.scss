@@ -1,4 +1,4 @@
-@use '../colors/colors' as clr;
+@import '../colors/colors';
 
 .container__item{
   margin: 25px;
@@ -16,7 +16,7 @@
 }
 
 .container__item--info h2 {
-  color: clr.$primary_blueLight;
+  color:$primary_blueLight;
   display: flex;
   justify-content: flex-start;
 }

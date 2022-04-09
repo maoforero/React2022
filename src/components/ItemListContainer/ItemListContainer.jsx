@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import customFetch from '../../utils/customFetch';
 import productos from '../../utils/products';
 import ItemList from '../ItemList/ItemList';
-import '../../Styles/components/itemListContainer.css';
+import '../../Styles/components/itemListContainer/itemListContainer.css';
 
 function  ItemListContainer (){
 
