@@ -1,5 +1,5 @@
 import React from 'react';
-import Bag from '../../Assets/icons/bag64.png';
+import Bag from '../../Assets/icons/bag32.png'
 import '../../Styles/components/cartWidget/cartWidget.css';
 
 
