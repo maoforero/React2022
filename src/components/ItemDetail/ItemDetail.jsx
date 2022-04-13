@@ -1,8 +1,29 @@
 import React from 'react'
 
-const ItemDetail = () => {
+const ItemDetail = ({product}) => {
   return (
-    <div>ItemDetail</div>
+    <div>
+      <h1>ITEM DETAIL</h1>
+
+      <div className="containerItemDetail">
+        <div className="container__ItemDetail--img">
+          <img src="" alt="" className='ItemDetail--img'/>
+        </div>
+        <div className="container__ItemDetail--info">
+          <h6 className="ItemDetail--infoTitle">Titulo</h6>
+          <p className="ItemDetail--infoDescription">Descripcion</p>
+        </div>
+        <div className="ItemDetail--buttonsIteractions">
+          <div className="countInteractions">
+            <p className="count">numeros</p>
+          </div>
+          <div className="buttonsInteractions">
+            <button className="increse">mas</button>
+            <button className="decrease">menos</button>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 
