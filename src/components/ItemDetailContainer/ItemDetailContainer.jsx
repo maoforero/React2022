@@ -2,24 +2,23 @@ import React, {useEffect, useState}from 'react';
 import productos from '../../utils/products'
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { Link, useParams } from 'react-router-dom';
+import customFetch from '../../utils/customFetch';
 
 const ItemDetailContainer = () => {
 
   const [product, setProduct] = useState([]);
-  
-  let { id } = useParams();
-  let int__id = parseInt(id);
 
-  const filterList = productos.map(function(item){
-    if(int__id === item.id){
-      setProduct(item);
-    }
-  });
+  let { idItem } = useParams();
   
+  useEffect(() => {
+    customFetch(1000, productos)
+      .then(res => setProduct(res.find(i => i.id === idItem)));
+  })
+
+
   return (
     <div>
-      <Link to={{pathname:'/menu:id'}}/>
-      <ItemDetail itemSelec={product}/>
+        <ItemDetail key={product.id} itemSelect={product}/>
     </div>
   )
 }

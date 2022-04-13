@@ -1,7 +1,7 @@
 import React from 'react';
 import Count from '../Count/Count';
 
-const ItemDetail = ({product}) => {
+const ItemDetail = (itemSelec) => {
   return (
     <div>
       <h1>ITEM</h1>
@@ -11,8 +11,8 @@ const ItemDetail = ({product}) => {
           <img src="" alt="" className='ItemDetail--img'/>
         </div>
         <div className="container__ItemDetail--info">
-          <h6 className="ItemDetail--infoTitle">Titulo</h6>
-          <p className="ItemDetail--infoDescription">Descripcion</p>
+          <h6 className="ItemDetail--infoTitle">{itemSelec.name}</h6>
+          <p className="ItemDetail--infoDescription">{itemSelec.price}</p>
         </div>
         <div className="ItemDetail--buttonsIteractions">
           <div className="countInteractions">
