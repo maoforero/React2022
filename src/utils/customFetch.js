@@ -10,4 +10,4 @@ const customFetch = (time, task) => {
       }
     }, time)})};
 
-    export default customFetch;
+export default customFetch;

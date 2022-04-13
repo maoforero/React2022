@@ -12,7 +12,6 @@ function Item({id, name, price, image}) {
         <h2>{name}</h2>
         <p>{price}</p>
       </div>
-      <Count stock={10}/>
     </div>
   )
 }

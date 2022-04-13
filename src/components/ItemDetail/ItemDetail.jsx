@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Count from '../Count/Count';
 
 const ItemDetail = ({product}) => {
   return (
     <div>
-      <h1>ITEM DETAIL</h1>
+      <h1>ITEM</h1>
 
       <div className="containerItemDetail">
         <div className="container__ItemDetail--img">
@@ -18,8 +19,7 @@ const ItemDetail = ({product}) => {
             <p className="count">numeros</p>
           </div>
           <div className="buttonsInteractions">
-            <button className="increse">mas</button>
-            <button className="decrease">menos</button>
+            <Count/>
           </div>
         </div>
       </div>

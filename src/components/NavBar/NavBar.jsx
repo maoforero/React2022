@@ -2,16 +2,16 @@ import React from 'react';
 import CartWidget from '../CartWidget/CartWidget';
 import '../../Styles/components/navBar/navBar.css'
 import IconLogo from '../IconLogo/IconLogo';
+import { NavLink } from 'react-router-dom';
 
 const navbar = () => {
   return (
       <nav className='container__navBar'>
         <IconLogo/>
           <ul className='container__navBar--list'>
-            <li className="navBar--list">Home</li>
-            <li className="navBar--list">Menu</li>
-            <li className="navBar--list">Café</li>
-            <li className="navBar--list">Antojos</li>
+            <NavLink className="navBar--list" to="/">Home</NavLink>
+            <NavLink className="navBar--list" to="/menu">Menu</NavLink>
+            <NavLink className="navBar--list" to="*">More</NavLink>
           </ul>
           <CartWidget/>
       </nav>
