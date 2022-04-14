@@ -12,8 +12,8 @@ Desafios:
 * Desafío: Crea tu landing ✅
 * Desafío: Contador con botón ✅
 * Desafío: Catálogo con MAPS y Promises ✅
-* Desafío: Detalle de Producto ⭕
-* Primera Entrega del Proyecto Final ⚠ ⭕
+* Desafío: Detalle de Producto ✅
+* Primera Entrega del Proyecto Final ⚠ ✅
 * Desafío: Sincronizar counter ⭕
 * Desafío: CartContext ⭕
 * Desafío: Cart View ⭕
@@ -22,7 +22,7 @@ Desafios:
 * Entrega del Proyecto Final ⚠ ⭕
 
 ## Preview
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/42775364/162368470-37974ec1-4498-4305-a398-f1c7f956206d.gif)
+![Hnet-image](https://user-images.githubusercontent.com/42775364/163331735-1e5c3434-b744-46f9-842d-ec23ed856964.gif)
 
 
 
