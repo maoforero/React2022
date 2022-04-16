@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import FilterCategory from '../FilterCategory/FilterCategory';
 
 const Drinks = () => {
   return (
-    <div>Drinks</div>
+    <div>Drinks
+      <FilterCategory/>
+    </div>
+
   )
 }
 
