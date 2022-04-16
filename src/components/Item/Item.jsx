@@ -7,7 +7,7 @@ function Item({id, name, price, image}) {
   return (
     <div key={id} className='container__item'>
       <div className="container__item--img">
-        <img src={image} alt={name}/>
+        <img className='item--img' src={image} alt={name}/>
       </div>
       <div className="container__item--info">
         <h2>{name}</h2>

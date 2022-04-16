@@ -1,4 +1,4 @@
-@import '../colors/colors';
+
 
 .container__item{
   margin: 25px;
@@ -6,9 +6,9 @@
   width: 130px;
 }
 
-.container__item--img{
-  height: 120px;
-  width: 130px;
+.item--img{
+  height: 85px;
+  width: 95px;
 }
 
 .container__item--info{
@@ -18,7 +18,7 @@
 .container__item--info h2 {
   color: #232323;
   display: flex;
-  font-size: 50px;
+  font-size: 10px;
   justify-content: flex-start;
 }
 
