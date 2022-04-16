@@ -1,21 +1,35 @@
 import React, { useEffect, useState } from 'react';
 import customFetch from '../../utils/customFetch';
-import { useParams } from "react-router-dom"
-import productos from '../../utils/[productos';
+import { useParams } from "react-router-dom";
+import productos from '../../utils/products';
+import Item from '../Item/Item';
 
-const FilterCategory = () => {
+const FilterCategory = (props) => {
 
   const [item, setItem] = useState([]);
 
-  let typeParams = useParams();
+  const prop = props;
+
+  console.log(prop.type);
 
   useEffect(() => {
     customFetch(1000, productos)
-    .then(res) => setItem(res.filter((e) => e.type === ))
-  })
+    .then((res) => {
+      setItem(res.filter((e) => e.type == prop.type))
+    })
+    .catch(error => console.log(error));
+  },[]);
 
   return (
-    <div>FilterCategory</div>
+    item.map(i => (
+      <Item
+      key={i.id}
+      id={i.id}
+      name={i.name} 
+      price={i.price} 
+      image={i.image} 
+      />
+    ))
   )
 }
 

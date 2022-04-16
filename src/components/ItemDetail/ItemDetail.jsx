@@ -7,7 +7,7 @@ const ItemDetail = (props) => {
   let idItem = props;
 
   return (
-    <div className="containerItemDetail">
+    <div key={idItem.id} className="containerItemDetail">
       <div className="container__ItemDetail--img">
         <img src={idItem.img} alt="" className='ItemDetail--img'/>
       </div>

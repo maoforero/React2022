@@ -1,12 +1,14 @@
 import React from 'react';
-import FilterCategory from '../FilterCategory/FilterCategory';
+import FilterCategory from '../components/FilterCategory/FilterCategory'
 
-const Drinks = () => {
+const Drinks = (props) => {
+  let type = props.type;
+
   return (
-    <div>Drinks
-      <FilterCategory/>
+    <div>
+      Drinks
+      <FilterCategory type={type}/>
     </div>
-
   )
 }
 

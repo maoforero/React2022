@@ -17,8 +17,8 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/menu" element={<ItemListContainer/>}/>
           <Route exact path="/menu/:id" element={<ItemDetailContainer/>}/>
-          <Route path="/bebidas" element={<Drinks/>}/>
-          <Route path="/alimentos" element={<Food/>}/>
+          <Route path="/bebidas" element={<Drinks type={"drink"} />}/>
+          <Route path="/alimentos" element={<Food type={"food"} />}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </div>
