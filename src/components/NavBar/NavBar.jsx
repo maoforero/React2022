@@ -11,6 +11,8 @@ const navbar = () => {
           <ul className='container__navBar--list'>
             <NavLink className="navBar--list" to="/">Home</NavLink>
             <NavLink className="navBar--list" to="/menu">Menu</NavLink>
+            <NavLink className="navBar--list" to="">Cafe</NavLink>
+            <NavLink className="navBar--list" to="">Antojos</NavLink>
             <NavLink className="navBar--list" to="*">More</NavLink>
           </ul>
           <CartWidget/>
