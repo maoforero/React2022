@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import FilterCategory from '../components/FilterCategory/FilterCategory';
 
 const Food = () => {
   return (
-    <div>Food</div>
+    <div>
+      <h1>Food</h1>
+      <div className='container__itemList'>
+        <FilterCategory type="food"/>
+      </div>  
+    </div>
   )
 }
 

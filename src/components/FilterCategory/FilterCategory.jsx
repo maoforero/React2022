@@ -4,13 +4,13 @@ import { useParams } from "react-router-dom";
 import productos from '../../utils/products';
 import Item from '../Item/Item';
 
+import '../../Styles/components/item/item.css'
+
 const FilterCategory = (props) => {
 
   const [item, setItem] = useState([]);
 
   const prop = props;
-
-  console.log(prop.type);
 
   useEffect(() => {
     customFetch(1000, productos)
