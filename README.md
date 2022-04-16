@@ -22,8 +22,17 @@ Desafios:
 * Entrega del Proyecto Final ⚠ ⭕
 
 ## Preview
-![Hnet-image](https://user-images.githubusercontent.com/42775364/163331735-1e5c3434-b744-46f9-842d-ec23ed856964.gif)
 
+# Todas las categorias
+![home](https://user-images.githubusercontent.com/42775364/163664797-a83914ef-b5fe-469d-adbc-2fa40961c536.gif)
+
+
+# Filtro de bebidas
+![drinkFilter](https://user-images.githubusercontent.com/42775364/163664829-5165b111-f388-492d-981f-9baf84f4f81c.gif)
+
+
+#Filtro de comidas
+![foodFilter](https://user-images.githubusercontent.com/42775364/163664807-794512e6-8ab1-474c-8d13-c1a0792d15bb.gif)
 
 
 Autor: Mauro Forero
