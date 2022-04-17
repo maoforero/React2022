@@ -18,7 +18,7 @@ const ItemDetail = (props) => {
       </div>
       <div className="ItemDetail--buttonsIteractions">
         <div className="countInteractions">
-          <p className="count">numeros</p>
+          <p className="count">{idItem.info}</p>
         </div>
         <div className="buttonsInteractions">
           <Count/>

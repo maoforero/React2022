@@ -19,11 +19,11 @@ function Count ({stock, initial}) {
   return (
     <div className='container__count'>
       <div className="container__Count--Buttons">
-          <button onClick={addClick} id="button--Increment" className='button--actionItem'>+</button>
-          <div className='Count--counter'>
-            <p className='counter'>{count}</p>
-          </div>
-          <button disabled={count === 0}  onClick={remClick} id="button--Decrement" className='button--actionItem'>-</button>
+        <button disabled={count === 0}  onClick={remClick} id="button--Decrement" className='button--actionItem'>-</button>
+        <div className='Count--counter'>
+          <p className='counter'>{count}</p>
+        </div>
+        <button onClick={addClick} id="button--Increment" className='button--actionItem'>+</button>
       </div>
       <div className="Cart--Button">
         <button disabled={count <= 0}  onClick={msmCart} id="button--Cart">Add to cart</button>
