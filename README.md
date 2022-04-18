@@ -14,7 +14,7 @@ Desafios:
 * Desafío: Catálogo con MAPS y Promises ✅
 * Desafío: Detalle de Producto ✅
 * Primera Entrega del Proyecto Final ⚠ ✅
-* Desafío: Sincronizar counter ⭕
+* Desafío: Sincronizar counter ✅
 * Desafío: CartContext ⭕
 * Desafío: Cart View ⭕
 * Desafío: Item Collection ⭕
@@ -22,17 +22,8 @@ Desafios:
 * Entrega del Proyecto Final ⚠ ⭕
 
 ## Preview
+![Hnet-image](https://user-images.githubusercontent.com/42775364/163892766-041ed022-ec86-4b33-8a61-0168d9717aac.gif)
 
-# Todas las categorias
-![home](https://user-images.githubusercontent.com/42775364/163664797-a83914ef-b5fe-469d-adbc-2fa40961c536.gif)
-
-
-# Filtro de bebidas
-![drinkFilter](https://user-images.githubusercontent.com/42775364/163664829-5165b111-f388-492d-981f-9baf84f4f81c.gif)
-
-
-# Filtro de comidas
-![foodFilter](https://user-images.githubusercontent.com/42775364/163664807-794512e6-8ab1-474c-8d13-c1a0792d15bb.gif)
 
 
 Autor: Mauro Forero
