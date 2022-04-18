@@ -10,6 +10,8 @@ const Cart = () => {
 
   return (
     <div>
+      <h1>CARRITO</h1>
+      <p>Cantidad elementos: {dataCount}</p>
       <ItemCart count={"Prueba"}/>
     </div>
   )
