@@ -27,6 +27,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  list-style: none;
   margin-left: 10px;
   text-decoration: none;
 }
@@ -42,6 +43,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px;
+  text-decoration: none;
   width: 70px;
 }
 

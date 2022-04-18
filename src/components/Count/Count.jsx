@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../Styles/components/count/count.css'
 
-function Count ({stock, initial}) {
+function Count ({stock, onAdd}) {
     const [count, setCount] = useState(0);
     const countProps = count;
 
     function addClick(){
-      setCount(count + 1);
+      if(count < stock){
+        setCount(count + 1);
+      }
     };
 
     function remClick(){
@@ -28,9 +30,10 @@ function Count ({stock, initial}) {
           <button onClick={addClick} id="button--Increment" className='button--actionItem'>+</button>
       </div>
       <div className="Cart--Button">
-        <Link to={'/cart'} state={countProps}>
+        <button onClick={() => onAdd(count)} disabled={count <= 0}>Add to Cart</button> 
+        {/* <Link to={'/cart'} state={countProps} >
           <button disabled={count <= 0}  onClick={msmCart} id="button--Cart"> Add to Cart</button>
-        </Link>
+        </Link> */}
         
       </div>
     </div>

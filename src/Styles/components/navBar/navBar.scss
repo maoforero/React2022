@@ -1,3 +1,4 @@
+@use '../../colors/colors.scss';
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,6 +8,7 @@
 $font-stack:Helvetica, sans-serif;
 
 .container__navBar{
+  background-color: $primary_greenLigth;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -16,8 +18,9 @@ $font-stack:Helvetica, sans-serif;
 .container__navBar--list{
   display: flex;
   flex-direction: row;
+  
   margin-left: 10px;
-  text-decoration: none
+  text-decoration: none;;
 }
 
 .navBar--list{
@@ -26,6 +29,7 @@ $font-stack:Helvetica, sans-serif;
   list-style: none;
   justify-content: center;
   padding: 10px;
+  text-decoration: none;
   width: 70px;
 }
 

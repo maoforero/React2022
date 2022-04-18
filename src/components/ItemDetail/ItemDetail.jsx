@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Count from '../Count/Count';
 import '../../Styles/components/ItemDetail/ItemDetail.css'
 
 const ItemDetail = (props) => {
+
+  const [quantity, setQuantity] = useState(0);
+
+  function countQuantity(count){
+    setQuantity(count);
+  }
+
+  console.log(quantity)
 
   let idItem = props;
 
@@ -21,7 +29,7 @@ const ItemDetail = (props) => {
           <p className="count">{idItem.info}</p>
         </div>
         <div className="buttonsInteractions">
-          <Count/>
+          <Count stock={idItem.stock} onAdd={countQuantity}/>
         </div>
       </div>
     </div>

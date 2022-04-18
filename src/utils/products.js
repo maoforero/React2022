@@ -6,7 +6,8 @@ const productos = [
     name: "Café Caliente",
     price: '$100',
     description: "Descripcion del producto 1",
-    imgage: "https://images-na.ssl-images-amazon.com/images/I/81pFGLZ6puL.jpg"
+    imgage: "https://images-na.ssl-images-amazon.com/images/I/81pFGLZ6puL.jpg",
+    stock: "10"
   },
   {
     id: "2",
@@ -15,7 +16,8 @@ const productos = [
     name: "Café Helado",
     price: '$200',
     description: "Descripcion del producto 2",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "3",
@@ -24,7 +26,8 @@ const productos = [
     name: "Frappuccinos",
     price: '$300',
     description: "Descripcion del producto 3",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "4",
@@ -33,7 +36,8 @@ const productos = [
     name: "Refreshers",
     price: '$400',
     description: "Descripcion del producto 4",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "5",
@@ -42,7 +46,8 @@ const productos = [
     name: "Té",
     price: '$500',
     description: "Descripcion del producto 5",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "6",
@@ -50,7 +55,8 @@ const productos = [
     name: "Cold Brew",
     price: '$600',
     description: "Descripcion del producto 6",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "7",
@@ -59,7 +65,8 @@ const productos = [
     name: "Chocolate",
     price: '$600',
     description: "Descripcion del producto 7",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "8",
@@ -68,7 +75,8 @@ const productos = [
     name: "Parfrait Frutos Rojos",
     price: '$600',
     description: "Descripcion del producto 8",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "9",
@@ -77,7 +85,8 @@ const productos = [
     name: "Limonada de Coco",
     price: '$600',
     description: "Descripcion del producto 9",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "10",
@@ -86,7 +95,8 @@ const productos = [
     name: "Aloe Vera",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "11",
@@ -95,7 +105,8 @@ const productos = [
     name: "Agua San Pellegrino",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "12",
@@ -104,7 +115,8 @@ const productos = [
     name: "Agua Manantial con gas",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "13",
@@ -113,7 +125,8 @@ const productos = [
     name: "Agua Manantial",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "14",
@@ -122,7 +135,8 @@ const productos = [
     name: "Jugo de Mandarina",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "15",
@@ -131,7 +145,8 @@ const productos = [
     name: "Jugo de Mandarina",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "16",
@@ -140,7 +155,8 @@ const productos = [
     name: "Rolo de Canela",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "17",
@@ -149,7 +165,8 @@ const productos = [
     name: "Pastel de Carne",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "18",
@@ -158,7 +175,8 @@ const productos = [
     name: "Pan de Queso",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "19",
@@ -167,7 +185,8 @@ const productos = [
     name: "Palmerita Roll",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "20",
@@ -176,7 +195,8 @@ const productos = [
     name: "Napolitana Cacao",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "21",
@@ -185,7 +205,8 @@ const productos = [
     name: "Muffin de Chocolate",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "22",
@@ -194,7 +215,8 @@ const productos = [
     name: "Muffin de Banano",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "23",
@@ -203,7 +225,8 @@ const productos = [
     name: "Muffin de Arándanos",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "24",
@@ -212,7 +235,8 @@ const productos = [
     name: "Malla Mixtao",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "25",
@@ -221,7 +245,8 @@ const productos = [
     name: "Donut Frutos Rojos",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "26",
@@ -230,7 +255,8 @@ const productos = [
     name: "Donut Caramelo",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "27",
@@ -239,7 +265,8 @@ const productos = [
     name: "Croissant Cereales",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "28",
@@ -248,7 +275,8 @@ const productos = [
     name: "Croissant Mantequilla",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "29",
@@ -257,7 +285,8 @@ const productos = [
     name: "Croissant Mantequilla Jamón y Queso",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "30",
@@ -266,7 +295,8 @@ const productos = [
     name: "Croissant Cereales Pavo",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "31",
@@ -275,7 +305,8 @@ const productos = [
     name: "Croissant Almendras",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "32",
@@ -284,7 +315,8 @@ const productos = [
     name: "Arepa con Queso",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "33",
@@ -293,7 +325,8 @@ const productos = [
     name: "Almojábana Tradicional",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "34",
@@ -302,7 +335,8 @@ const productos = [
     name: "Almojábana Tradicional",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "35",
@@ -310,7 +344,8 @@ const productos = [
     name: "Wrap Pollo Chipotle",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "36",
@@ -319,7 +354,8 @@ const productos = [
     name: "Panini Pavo",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "37",
@@ -328,7 +364,8 @@ const productos = [
     name: "Panini Milano",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "38",
@@ -337,7 +374,8 @@ const productos = [
     name: "Panini Huevo",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "39",
@@ -346,7 +384,8 @@ const productos = [
     name: "Panini Clásico",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "40",
@@ -355,7 +394,8 @@ const productos = [
     name: "Queso Pera",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "41",
@@ -364,7 +404,8 @@ const productos = [
     name: "Piccato Arandanos",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "42",
@@ -373,7 +414,8 @@ const productos = [
     name: "Moneda de Chocolate",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "43",
@@ -382,7 +424,8 @@ const productos = [
     name: "Galleta Chocochips",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "44",
@@ -391,7 +434,8 @@ const productos = [
     name: "Galleta Avena de Manzana",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "45",
@@ -400,7 +444,8 @@ const productos = [
     name: "Galleta Avena",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "46",
@@ -409,7 +454,8 @@ const productos = [
     name: "Cake Pops",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
   {
     id: "47",
@@ -418,7 +464,8 @@ const productos = [
     name: "Beownie",
     price: '$600',
     description: "Descripcion del producto 10",
-    image: "https://random.imagecdn.app/240/240"
+    image: "https://random.imagecdn.app/240/240",
+    stock: "10"
   },
 ]
 

@@ -20,6 +20,7 @@ const ItemDetailContainer = () => {
   let itemPrice;
   let itemInfo;
   let itemImg;
+  let itemStock;
 
   let validateProduct = (product) => {
     if(product.length !== 0){
@@ -27,9 +28,11 @@ const ItemDetailContainer = () => {
       itemName = product[0].name;
       itemPrice = product[0].price;
       itemInfo = product[0].description;
-      itemImg = product[0].image;   
+      itemImg = product[0].image;
+      itemStock = product[0].stock;
     }
   }
+
   validateProduct(product)
 
   return (
@@ -41,6 +44,7 @@ const ItemDetailContainer = () => {
         price={itemPrice}
         info={itemInfo}
         img={itemImg}
+        stock={itemStock}
       />
     </div>
   );

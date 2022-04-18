@@ -22,7 +22,7 @@ const FilterCategory = (props) => {
 
   return (
     item.map(i => (
-      <Item
+      <Item 
       key={i.id}
       id={i.id}
       name={i.name} 
