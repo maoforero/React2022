@@ -12,6 +12,7 @@ $font-stack:Helvetica, sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: sticky;
   width: 100%;
 }
 
@@ -36,4 +37,10 @@ $font-stack:Helvetica, sans-serif;
 .navBar--list:hover{
   background-color: aqua;
   border-radius: 0  0 6px 6px;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+  .navBar--list{
+    width: 50px;
+  }
 }
