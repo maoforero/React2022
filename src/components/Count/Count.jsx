@@ -1,10 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
+
+import { CartContext } from '../../Context/CartContext';
+import { ProductContext } from '../../Context/ProductContext';
+
 import '../../Styles/components/count/count.css'
 
-function Count ({stock, onAdd}) {
+
+function Count ({stock, name, id, price}) {
     const [count, setCount] = useState(0);
-    const countProps = count;
+    const [idProduct, setIdProduct] = useState(id);
+    const [nameProduct, setNameProduct] = useState(name);
+    const [priceProduct, setPriceProduct] = useState(price);
+
+    let idPrueba = idProduct;
+
+    const { setCart } = useContext (CartContext);
+
+    const arrayProduct = [count, idProduct, nameProduct, priceProduct];
+
 
     function addClick(){
       if(count < stock){
@@ -16,10 +30,6 @@ function Count ({stock, onAdd}) {
       setCount(count - 1);
     };
 
-    function msmCart(){
-      alert(`${count} Agregados a el carrito`);
-    }
-
   return (
     <div className='container__count'>
       <div className="container__Count--Buttons">
@@ -30,10 +40,9 @@ function Count ({stock, onAdd}) {
           <button onClick={addClick} id="button--Increment" className='button--actionItem'>+</button>
       </div>
       <div className="Cart--Button">
-        <button onClick={() => onAdd(count)} disabled={count <= 0}>Add to Cart</button> 
-        {/* <Link to={'/cart'} state={countProps} >
-          <button disabled={count <= 0}  onClick={msmCart} id="button--Cart"> Add to Cart</button>
-        </Link> */}
+        <Link to={'/cart'} >
+          <button disabled={count <= 0}  onClick={()=> {setCart(arrayProduct)}} id="button--Cart"> Add to Cart</button>
+        </Link>
         
       </div>
     </div>

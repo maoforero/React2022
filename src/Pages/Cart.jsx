@@ -4,15 +4,11 @@ import ItemCart from '../components/ItemCart/ItemCart';
 
 const Cart = () => {
 
-  const location = useLocation();
-  const dataCount = location.state;
-  console.log(dataCount);
-
   return (
     <div>
       <h1>CARRITO</h1>
-      <p>Cantidad elementos: {dataCount}</p>
-      <ItemCart count={"Prueba"}/>
+      <p>Cantidad elementos:</p>
+      <ItemCart/>
     </div>
   )
 }

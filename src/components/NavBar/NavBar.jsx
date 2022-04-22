@@ -15,7 +15,10 @@ const navbar = () => {
             <NavLink className="navBar--list" to="/alimentos">Alimentos</NavLink>
             <NavLink className="navBar--list" to="*">More</NavLink>
           </ul>
-          <CartWidget/>
+          <NavLink to="/cart">
+            <CartWidget />
+          </NavLink>
+          
       </nav>
   )
 }

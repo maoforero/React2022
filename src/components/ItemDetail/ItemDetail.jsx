@@ -4,14 +4,6 @@ import '../../Styles/components/ItemDetail/ItemDetail.css'
 
 const ItemDetail = (props) => {
 
-  const [quantity, setQuantity] = useState(0);
-
-  function countQuantity(count){
-    setQuantity(count);
-  }
-
-  console.log(quantity)
-
   let idItem = props;
 
   return (
@@ -29,7 +21,7 @@ const ItemDetail = (props) => {
           <p className="count">{idItem.info}</p>
         </div>
         <div className="buttonsInteractions">
-          <Count stock={idItem.stock} onAdd={countQuantity}/>
+          <Count stock={idItem.stock} name={idItem.name} id={idItem.id} price={idItem.price}/>
         </div>
       </div>
     </div>
