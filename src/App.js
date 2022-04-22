@@ -9,6 +9,8 @@ import NotFound from './Pages/NotFound'
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
+export const CartContext = React.createContext();
+
 function App() {
   return (
     <BrowserRouter>
