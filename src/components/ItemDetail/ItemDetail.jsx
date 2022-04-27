@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
 import Count from '../Count/Count';
+import { useCartContext } from '../../Context/CartContext';
 import '../../Styles/components/ItemDetail/ItemDetail.css'
 
 const ItemDetail = (props) => {
 
+  const { addToCart } = useCartContext();
+
   let idItem = props;
+
+  function handleOnAdd(count){
+    addToCart(idItem, count);
+  }
 
   return (
     <div key={idItem.id} className="containerItemDetail">

@@ -7,18 +7,8 @@ import { ProductContext } from '../../Context/ProductContext';
 import '../../Styles/components/count/count.css'
 
 
-function Count ({stock, name, id, price}) {
+function Count ({stock}) {
     const [count, setCount] = useState(0);
-    const [idProduct, setIdProduct] = useState(id);
-    const [nameProduct, setNameProduct] = useState(name);
-    const [priceProduct, setPriceProduct] = useState(price);
-
-    let idPrueba = idProduct;
-
-    const { setCart } = useContext (CartContext);
-
-    const arrayProduct = [count, idProduct, nameProduct, priceProduct];
-
 
     function addClick(){
       if(count < stock){
@@ -41,7 +31,7 @@ function Count ({stock, name, id, price}) {
       </div>
       <div className="Cart--Button">
         <Link to={'/cart'} >
-          <button disabled={count <= 0}  onClick={()=> {setCart(arrayProduct)}} id="button--Cart"> Add to Cart</button>
+          <button disabled={count <= 0} id="button--Cart"> Add to Cart</button>
         </Link>
         
       </div>

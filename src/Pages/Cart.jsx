@@ -1,14 +1,30 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useCartContext } from '../Context/CartContext';
 import ItemCart from '../components/ItemCart/ItemCart';
 
 const Cart = () => {
 
+  const { cart, addToCart, clearCart, removeItem, countTotalCart } = useCartContext();
+
   return (
-    <div>
-      <h1>CARRITO</h1>
-      <p>Cantidad elementos:</p>
-      <ItemCart/>
+    <div className='containerCart'>
+      {
+        countTotalCart > 0 ? (
+          <div className='cointainerCart__TrueProducts'>
+            <div className="container__ListProducts">
+        
+          </div>
+          <div className="container__TotalAmount">
+
+          </div>
+        </div>
+
+        ) :
+        <div className='cointainerCart__FalseProducts'>
+          <h2>Carrito de Compras</h2>
+          <p>No Existen productos Seleccionados</p>
+        </div>
+      }
     </div>
   )
 }
