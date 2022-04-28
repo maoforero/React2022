@@ -16,14 +16,13 @@ Desafios:
 * Primera Entrega del Proyecto Final ⚠ ✅
 * Desafío: Sincronizar counter ✅
 * Desafío: CartContext ✅
-* Desafío: Cart View ⭕
+* Desafío: Cart View ✅
 * Desafío: Item Collection ⭕
 * Desafío: Item Collection II ⭕
 * Entrega del Proyecto Final ⚠ ⭕
 
 ## Preview
-
-![Hnet-image-2](https://user-images.githubusercontent.com/42775364/164646070-b0491046-8443-49c5-be84-83643c4e20e4.gif)
+![Hnet-image-3](https://user-images.githubusercontent.com/42775364/165863480-ccd7dddc-4d7f-4b0a-b9bd-d66287085d87.gif)
 
 
 Autor: Mauro Forero
