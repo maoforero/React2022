@@ -1,0 +1,9 @@
+.container__ItemCart{
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+}
+
+.container__ItemCart--title, .container__ItemCart--price, .container__ItemCart--quantity {
+  margin: 10px;
+}

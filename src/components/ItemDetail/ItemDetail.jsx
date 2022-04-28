@@ -1,17 +1,11 @@
 import React, { useState } from 'react';
 import Count from '../Count/Count';
-import { useCartContext } from '../../Context/CartContext';
 import '../../Styles/components/ItemDetail/ItemDetail.css'
 
 const ItemDetail = (props) => {
 
-  const { addToCart } = useCartContext();
-
   let idItem = props;
 
-  function handleOnAdd(count){
-    addToCart(idItem, count);
-  }
 
   return (
     <div key={idItem.id} className="containerItemDetail">
@@ -28,7 +22,7 @@ const ItemDetail = (props) => {
           <p className="count">{idItem.info}</p>
         </div>
         <div className="buttonsInteractions">
-          <Count stock={idItem.stock} name={idItem.name} id={idItem.id} price={idItem.price}/>
+          <Count stock={idItem.stock} item={idItem}/>
         </div>
       </div>
     </div>

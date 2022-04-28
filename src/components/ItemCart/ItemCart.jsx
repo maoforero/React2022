@@ -1,32 +1,49 @@
-import React, { useContext, useState } from 'react';
-import { CartContext } from '../../Context/CartContext';
-import { ProductContext } from '../../Context/ProductContext';
+import React, {useContext} from 'react';
+import {CartContext} from '../../Context/CartContext';
 
-const ItemCart = () => {
-  let listProducts = [];
+import '../../Styles/components/ItemCart/ItemCart.css';
 
-  const [listCart, setListCart] = useState([listProducts]);
+const ItemCart = ({id, name, price, quantity}) => {
 
-  const { cart } = useContext(CartContext);
+  const { removeItem } = useContext(CartContext);
+  const { deleteQuantity } = useContext(CartContext);
 
-  function filterListProducts(cart){
-
-    const filter = listCart.filter(i => i === cart[2]);
-
-    !filter ? cart.push(listProducts) : console.log('El Producto ya existe en el carrito');
+  const convertionPriceToNumber = (price) => {
+    let numberPrice = parseFloat(price.replace(/[^0-9.-]+/g,""));
+    return numberPrice;
   }
 
-  console.log(cart);
+  const totalPriceItem = convertionPriceToNumber(price) * quantity;
 
   return(
-    <div>
-      <h2>Carrito</h2>
-      <h4>Producto: {cart[2]}</h4>
-      <p>Precio: {cart[3]}</p>
-      <p> Cantidad:
-        {cart[0]}
-      </p>
-    </div>
+      <div key={id} className='container__ItemCart'>
+        <div className="container__ItemCart--title">
+          <h4>Productos</h4>
+          <div className="container__ItemCart--titleItem">
+            <h6 className='itemCart--title'>{name}</h6>
+          </div>
+        </div>
+
+        <div className="container__ItemCart--price">
+          <h4>Precio</h4>
+          <div className='container__ItemCart--priceItem'>
+            <p className='itemCart--price'>{totalPriceItem}</p>
+          </div>
+        </div>
+
+        <div className="container__ItemCart--quantity">
+          <h4>Cantidad</h4>
+          <div className='container__ItemCart--quantityItem'>
+            <p className='itemCart--quantity'>Cantidad Elementos: {quantity}</p>
+          </div>
+        </div>
+        
+        <button className='itemCart--deleteItem' onClick={() => 
+          {
+            removeItem(id);
+            deleteQuantity(quantity)
+          }}>Delete</button>
+      </div>
   )
 }
 

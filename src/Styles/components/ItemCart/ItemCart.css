@@ -1,0 +1,15 @@
+.container__ItemCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 25px;
+}
+
+.container__ItemCart--title, .container__ItemCart--price, .container__ItemCart--quantity {
+  margin: 10px;
+}
+/*# sourceMappingURL=ItemCart.css.map */

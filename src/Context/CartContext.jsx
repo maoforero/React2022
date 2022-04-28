@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, createContext,  useEffect, useContext } from 'react';
 
-export const CartContext = React.createContext();
+export const CartContext = createContext();
 export const useCartContext = () => useContext(CartContext);
 
 export const CartProvider = ({ children }) => {
@@ -13,6 +13,7 @@ export const CartProvider = ({ children }) => {
   const clearCart = () => { setCart([])}
 
   const removeItem = (id) => setCart(cart.filter(item => item.id !== id))
+  const deleteQuantity = (count) => {setTotal(total - count)}
 
   const addToCart = (item, quantity) => {
     if(isInCart(item.id)){
@@ -29,19 +30,20 @@ export const CartProvider = ({ children }) => {
     }
   }
 
-  const countTotalCart = (quantity) => {
-    setTotal(prev => prev + quantity)
-
-  }
+  const countTotal = (count) => setTotal(total + count)
 
   return (
     <CartContext.Provider value={{
       cart,
       setCart,
-      addToCart,
+      isInCart,
       clearCart,
       removeItem,
-      countTotalCart
+      addToCart,
+      total,
+      setTotal,
+      countTotal,
+      deleteQuantity
     }}>
       { children }
     </CartContext.Provider>
