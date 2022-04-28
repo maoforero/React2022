@@ -10,7 +10,7 @@ export const CartProvider = ({ children }) => {
 
   const isInCart = (id) => {cart.some(item => item.id === id)}
 
-  const clearCart = () => { setCart([])}
+  const clearCart = () => { setCart([]);setTotal(0) }
 
   const removeItem = (id) => setCart(cart.filter(item => item.id !== id))
   const deleteQuantity = (count) => {setTotal(total - count)}
