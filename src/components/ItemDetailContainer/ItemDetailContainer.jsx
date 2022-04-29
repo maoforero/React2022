@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     const db = getFirestore();
-    const uniqueProduct = doc(db, 'productos', '0xzQXlVYPBDDPRSg7Yfd' );
+    const uniqueProduct = doc(db, 'productos', idProduct );
 
     getDoc(uniqueProduct).then((res) => {
 
