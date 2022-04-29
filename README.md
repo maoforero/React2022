@@ -17,7 +17,7 @@ Desafios:
 * Desafío: Sincronizar counter ✅
 * Desafío: CartContext ✅
 * Desafío: Cart View ✅
-* Desafío: Item Collection ⭕
+* Desafío: Item Collection ✅ 
 * Desafío: Item Collection II ⭕
 * Entrega del Proyecto Final ⚠ ⭕
 
