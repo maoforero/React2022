@@ -3,29 +3,28 @@ import productos from "../../utils/products";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import customFetch from "../../utils/customFetch";
-import { collection, getDocs, getFirestore } from "firebase/firestore";
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
-  const [product, setProduct] = useState([]);
-
-
+  const [product, setProduct] = useState({});
 
   let idItem = useParams();
 
+  let idProduct = idItem.id;
 
   useEffect(() => {
     const db = getFirestore();
-    const listProducts = collection(db, 'productos', idItem.id );
-  
-    getDocs(listProducts).then((res) => {
-      const productoJunto = {id: res.id, ...res.data()}
-  
-      setProduct(productoJunto);
+    const uniqueProduct = doc(db, 'productos', '0xzQXlVYPBDDPRSg7Yfd' );
+
+    getDoc(uniqueProduct).then((res) => {
+
+      const l =  {id: res.id, ...res.data()};
+
+      setProduct(l);
+
       // setProduct(res.filter((i) => i.id === idItem.id));
     });
   }, [])
-
-  console.log(idItem)
 
   let itemId;
   let itemName;
@@ -36,16 +35,16 @@ const ItemDetailContainer = () => {
 
   let validateProduct = (product) => {
     if(product.length !== 0){
-      itemId = product[0].id;
-      itemName = product[0].name;
-      itemPrice = product[0].price;
-      itemInfo = product[0].description;
-      itemImg = product[0].image;
-      itemStock = product[0].stock;
+      itemId = product.id;
+      itemName = product.name;
+      itemPrice = product.price;
+      itemInfo = product.description;
+      itemImg = product.image;
+      itemStock = product.stock;
     }
   }
 
-  validateProduct(product)
+  validateProduct(product);
 
   return (
     <div>

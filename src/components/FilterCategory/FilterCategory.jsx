@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import productos from '../../utils/products';
 import Item from '../Item/Item';
 
-import { collection, getDocs, getFirestore }  from 'firebase/firestore';
+import { collection, getDocs, getFirestore } from "firebase/firestore";
 
 import '../../Styles/components/item/item.css'
 

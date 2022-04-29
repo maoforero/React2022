@@ -7,13 +7,10 @@ const ItemCart = ({id, name, price, quantity}) => {
 
   const { removeItem } = useContext(CartContext);
   const { deleteQuantity } = useContext(CartContext);
-
-  const convertionPriceToNumber = (price) => {
-    let numberPrice = parseFloat(price.replace(/[^0-9.-]+/g,""));
-    return numberPrice;
-  }
-
-  const totalPriceItem = convertionPriceToNumber(price) * quantity;
+  
+  console.log(quantity)
+  console.log(price)
+  const totalPriceItem = price * quantity;
 
   return(
       <div key={id} className='container__ItemCart'>
