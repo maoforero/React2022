@@ -6,7 +6,7 @@ const productos = [
     name: "Café Caliente",
     price: '$100',
     description: "Descripcion del producto 1",
-    imgage: "https://images-na.ssl-images-amazon.com/images/I/81pFGLZ6puL.jpg",
+    image: "https://random.imagecdn.app/240/240",
     stock: "10"
   },
   {
