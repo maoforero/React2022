@@ -3,17 +3,29 @@ import productos from "../../utils/products";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import customFetch from "../../utils/customFetch";
+import { collection, getDocs, getFirestore } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState([]);
 
+
+
   let idItem = useParams();
 
+
   useEffect(() => {
-    customFetch(1000, productos).then((res) =>
-      setProduct(res.filter((i) => i.id === idItem.id))
-    );
-  },[]);
+    const db = getFirestore();
+    const listProducts = collection(db, 'productos', idItem.id );
+  
+    getDocs(listProducts).then((res) => {
+      const productoJunto = {id: res.id, ...res.data()}
+  
+      setProduct(productoJunto);
+      // setProduct(res.filter((i) => i.id === idItem.id));
+    });
+  }, [])
+
+  console.log(idItem)
 
   let itemId;
   let itemName;

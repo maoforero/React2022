@@ -4,16 +4,24 @@ import productos from '../../utils/products';
 import ItemList from '../ItemList/ItemList';
 import '../../Styles/components/itemListContainer/itemListContainer.css';
 
+import {collection, getDocs, getFirestore } from 'firebase/firestore';
+
 function  ItemListContainer (){
 
   const [item, setItem] = useState([]);
 
   useEffect(() => {
-    customFetch(1000, productos)
-    .then(resultado => setItem(resultado))
-    .catch(error => console.log(error));
+    const db = getFirestore();
 
-  }, [item])
+    const refProduct = collection(db, 'productos');
+
+    getDocs(refProduct).then((res) => {
+      let item = [...res.docs];
+
+      item = item.map((i) => ({id: i.id, ...i.data()}));
+      setItem(item);
+    });
+  }, [])
 
   return (
     <div className='container__bodyItems'>
@@ -25,4 +33,4 @@ function  ItemListContainer (){
   )
 }
 
-export default ItemListContainer;
+export default ItemListContainer

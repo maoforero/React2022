@@ -461,7 +461,7 @@ const productos = [
     id: "47",
     type: "food",
     category:"package food",
-    name: "Beownie",
+    name: "Brownie",
     price: '$600',
     description: "Descripcion del producto 10",
     image: "https://random.imagecdn.app/240/240",

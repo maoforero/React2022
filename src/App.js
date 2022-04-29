@@ -9,6 +9,9 @@ import NotFound from './Pages/NotFound'
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
+import Test from './components/Test';
+import TestCollection from './utils/FBGetCollection'
+
 import { CartProvider } from './Context/CartContext';
 
 export const CartContext = React.createContext();
@@ -20,6 +23,8 @@ function App() {
         <div className="App">
           <NavBar/>
           <Routes>
+            <Route path="/test" element={<Test/>}/>
+            <Route path="/testcollection" element={<TestCollection/>}/>
             <Route path="/" element={<Home/>}/>
             <Route path="/menu" element={<ItemListContainer/>}/>
             <Route exact path="/menu/:id" element={<ItemDetailContainer/>}/>

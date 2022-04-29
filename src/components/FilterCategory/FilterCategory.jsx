@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import productos from '../../utils/products';
 import Item from '../Item/Item';
 
+import { collection, getDocs, getFirestore }  from 'firebase/firestore';
+
 import '../../Styles/components/item/item.css'
 
 const FilterCategory = (props) => {
@@ -13,12 +15,21 @@ const FilterCategory = (props) => {
   const prop = props;
 
   useEffect(() => {
-    customFetch(1000, productos)
-    .then((res) => {
-      setItem(res.filter((e) => e.type == prop.type))
-    })
-    .catch(error => console.log(error));
-  },[]);
+    const db = getFirestore();
+
+    const cartProduct = collection(db, 'productos');
+
+    getDocs(cartProduct).then((res) => {
+      let item = [...res.docs];
+      
+      item = item.map((i) => ({id: i.id, ...i.data()}));
+
+      setItem(item.filter((e) => e.type === prop.type));
+    });
+  }, []);
+  
+  console.log(item)
+  console.log(prop.type)
 
   return (
     item.map(i => (
