@@ -17,8 +17,8 @@ export default function FBGetCollection (){
       productos = productos.map((item) => ({id: item.id, ...item.data()}));
 
       console.log(productos);
+      setProductos(productos);
 
-      setProductos(res.docs.map(item => ({id: item.id, ...item.data()})));
     });
   }, [])
 

@@ -12,8 +12,6 @@ function Count ({stock, item}) {
 
     const { addToCart } = useContext(CartContext);
 
-    const count1 = 1;
-
     function addClick(){
       if(count < stock){
         setCount(count + 1);
