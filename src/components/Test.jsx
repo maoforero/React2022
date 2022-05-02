@@ -7,9 +7,9 @@ export default function Test(){
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [cellphone, setCellphone] = useState();
-  const [buyer, setBuyer] = useState({});
+  const [buy, setBuy] = useState({});
 
-  const { cart, countTotal } = useContext(CartContext);
+  const { cart, total } = useContext(CartContext);
 
   const db = getFirestore();
 
@@ -60,14 +60,17 @@ export default function Test(){
           year
         },
         cart,
-        countTotal
+        total
       }
       console.log('compra Exitosa');
       console.log(data)
+      setBuy(data);
 
-      addDoc(ordersRef, buyer).then(({ id }) =>{
-        alert('Compra Exitosa ' + id);
-      });
+      setTimeout(() => {
+        addDoc(ordersRef, buy).then(({ id }) =>{
+          alert('Compra Exitosa ' + id);
+        });
+      } , 1000);
 
     }else{
       console.log('Datos Incompletos');
