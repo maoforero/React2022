@@ -69,7 +69,7 @@ function terminarCompra(){
 
     setTimeout(() => {
       addDoc(ordersRef, buy).then(({ id }) =>{
-        alert('Compra Exitosa ' + id);
+        alert('Compra Exitosa, ID de la compra  registrado: ' + id);
       });
     } , 1000);
 
@@ -80,27 +80,41 @@ function terminarCompra(){
 
   return (
     <div>
-      <input 
-        type={'text'}
-        value={name}
+
+      <h1>Formulario de compra:</h1>
+      <p>Para finalizar su compra por favor complete los siguientes datos.</p>
+      <br></br>
+
+      <label> Nombre:
+        <input 
+          type={'text'}
+          value={name}
+          onChange={
+            (e) => setName(e.target.value)
+          }
+        />
+      </label>
+
+      <label>Correo:
+          <input
+          type={'email'} 
+          value={email}
+          onChange={
+            (e) => setEmail(e.target.value)
+          }
+          />
+      </label>
+
+      <label>Teléfono:
+        <input
+        type={'number'}
+        value={cellphone}
         onChange={
-          (e) => setName(e.target.value)
+          (e) => setCellphone(e.target.value)
         }
-      />
-      <input
-        type={'text'} 
-        value={email}
-        onChange={
-          (e) => setEmail(e.target.value)
-        }
-      />
-      <input
-      type={'number'}
-      value={cellphone}
-      onChange={
-        (e) => setCellphone(e.target.value)
-      }
-      />
+        />
+      </label>
+
 
       <button onClick={() => terminarCompra()}>Comprar</button>
     </div>
