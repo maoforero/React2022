@@ -5,7 +5,8 @@ import Home from './Pages/Home';
 import Drinks from './Pages/Drinks';
 import Food from './Pages/Food';
 import Cart from './Pages/Cart';
-import NotFound from './Pages/NotFound'
+import NotFound from './Pages/NotFound';
+import Form from './components/Form/Form';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
@@ -32,6 +33,7 @@ function App() {
             <Route path="/alimentos" element={<Food type={"food"} />}/>
             <Route path="/cart" element={<Cart/>}/>
             <Route path="*" element={<NotFound/>}/>
+            <Route path="/form" element={<Form/>}/>
           </Routes>
         </div>
       </BrowserRouter>

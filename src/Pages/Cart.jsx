@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import ItemCart from '../components/ItemCart/ItemCart';
 import { CartContext } from '../Context/CartContext';
 
@@ -28,6 +29,9 @@ const Cart = () => {
     }
         <div>
           <button onClick={clearCart}>Delete All</button>
+          <button className='buttonBuyAll'>
+            <Link to={'/form'}>Comprar</Link>
+          </button>
         </div>
     </div>
   ) 
