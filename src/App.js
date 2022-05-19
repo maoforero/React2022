@@ -7,11 +7,11 @@ import Food from './Pages/Food';
 import Cart from './Pages/Cart';
 import NotFound from './Pages/NotFound';
 import Form from './components/Form/Form';
+
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
-import Test from './components/Test';
-import TestCollection from './utils/FBGetCollection'
+import FooterComponent from './Pages/Footer'
 
 import { CartProvider } from './Context/CartContext';
 
@@ -24,8 +24,6 @@ function App() {
         <div className="App">
           <NavBar/>
           <Routes>
-            <Route path="/test" element={<Test/>}/>
-            <Route path="/testcollection" element={<TestCollection/>}/>
             <Route path="/" element={<Home/>}/>
             <Route path="/menu" element={<ItemListContainer/>}/>
             <Route exact path="/menu/:id" element={<ItemDetailContainer/>}/>
@@ -37,6 +35,7 @@ function App() {
           </Routes>
         </div>
       </BrowserRouter>
+      <FooterComponent/>
     </CartProvider>
   );
 }

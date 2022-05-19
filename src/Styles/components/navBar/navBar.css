@@ -1,3 +1,4 @@
+@use '../../colors/colors.scss';
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6,6 +7,7 @@
 }
 
 .container__navBar {
+  background-color: #097b50;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,6 +18,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 100%;
 }
 
@@ -27,7 +32,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  list-style: none;
   margin-left: 10px;
   text-decoration: none;
 }
@@ -50,5 +54,11 @@
 .navBar--list:hover {
   background-color: aqua;
   border-radius: 0  0 6px 6px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .navBar--list {
+    width: 50px;
+  }
 }
 /*# sourceMappingURL=navBar.css.map */

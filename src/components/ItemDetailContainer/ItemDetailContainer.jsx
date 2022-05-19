@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import productos from "../../utils/products";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
-import customFetch from "../../utils/customFetch";
 import { doc, getDoc, getFirestore } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
