@@ -13,7 +13,6 @@ const navbar = () => {
             <NavLink className="navBar--list" to="/menu">Menu</NavLink>
             <NavLink className="navBar--list" to="/bebidas">Bebidas</NavLink>
             <NavLink className="navBar--list" to="/alimentos">Alimentos</NavLink>
-            <NavLink className="navBar--list" to="*">More</NavLink>
           </ul>
           <NavLink to="/cart">
             <CartWidget />

@@ -8,6 +8,7 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([])
   const [total, setTotal] = useState(0);
 
+
   const isInCart = (id) => {cart.some(item => item.id === id)}
 
   const clearCart = () => { setCart([]);setTotal(0) }
@@ -30,7 +31,9 @@ export const CartProvider = ({ children }) => {
     }
   }
 
-  const countTotal = (count) => setTotal(total + count)
+  const countTotal = (count) => setTotal(total + count);
+  
+
 
   return (
     <CartContext.Provider value={{

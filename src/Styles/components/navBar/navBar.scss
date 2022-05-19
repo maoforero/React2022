@@ -18,15 +18,17 @@ $font-stack:Helvetica, sans-serif;
 }
 
 .container__navBar--list{
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
-  
+  justify-content: flex-start;
   margin-left: 10px;
-  text-decoration: none;;
+  text-decoration: none;
 }
 
 .navBar--list{
-  align-self: center;
+  align-self: flex-start;
+  color: white;
   display: flex;
   list-style: none;
   justify-content: center;
@@ -36,7 +38,7 @@ $font-stack:Helvetica, sans-serif;
 }
 
 .navBar--list:hover{
-  background-color: aqua;
+  background-color: #85c3a4;;
   border-radius: 0  0 6px 6px;
 }
 
