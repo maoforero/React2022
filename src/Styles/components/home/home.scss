@@ -1,4 +1,31 @@
 .mainContainer__Home{
+  background-image: url('../../../Assets/banner/bannerCoffe.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
   height: 70vh;
+  margin-top: 30px;
   width: 100%
+}
+
+//Left part
+.home__mainBanner--img{
+  height: 63vh;
+  width: auto;
+}
+
+
+//Right part
+
+.home__mainBanner--title{
+  width: 100%;
+}
+
+.mainBanner--title{
+  font-weight: 700;
+  font-size: 5rem;
+  margin-right: 65px;
+  padding: 10px;
+  text-align: right;
 }
