@@ -1,32 +1,81 @@
 .mainContainer__Home {
-  background-image: url("../../../Assets/banner/bannerCoffe.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  height: 70vh;
+  height: 60vh;
   margin-top: 30px;
   width: 100%;
 }
 
 .home__mainBanner--img {
-  height: 63vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 65px;
+}
+
+.mainBanner--img {
+  height: 55vh;
   width: auto;
 }
 
 .home__mainBanner--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  margin: 65px 65px 0px 0;
   width: 100%;
 }
 
 .mainBanner--title {
   font-weight: 700;
-  font-size: 5rem;
-  margin-right: 65px;
+  font-size: 7rem;
   padding: 10px;
-  text-align: right;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.mainBanner--info {
+  font-size: 2.7rem;
+  font-weight: 320;
+  padding: 10px;
+  text-align: center;
+}
+
+.home__mainBanner--buttonMore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 65px;
+}
+
+.container__buttonMore {
+  border: none;
+  border-radius: 25px;
+  background-color: #077b55;
+  color: #fff;
+  font-size: 2rem;
+  height: 130%;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  width: 57%;
 }
 /*# sourceMappingURL=home.css.map */

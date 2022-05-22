@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../Assets/logo/starbucks32.png';
+import logo from '../../Assets/logo/starbucks64.png';
 import '../../Styles/components/iconLogo/iconLogo.css'
 
 

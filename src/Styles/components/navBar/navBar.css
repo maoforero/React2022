@@ -43,19 +43,21 @@
 }
 
 .navBar--list {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 1.5rem;
+  height: 100%;
+  justify-items: center;
   list-style: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 10px;
+  margin: 0 30px;
+  padding: 5px;
   text-decoration: none;
-  width: 70px;
+  width: 100%;
 }
 
 .navBar--list:hover {
