@@ -23,6 +23,7 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <NavBar/>
+          
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/menu" element={<ItemListContainer/>}/>
@@ -33,9 +34,12 @@ function App() {
             <Route path="*" element={<NotFound/>}/>
             <Route path="/form" element={<Form/>}/>
           </Routes>
+
+          <FooterComponent/>
         </div>
+        
       </BrowserRouter>
-      <FooterComponent/>
+      
     </CartProvider>
   );
 }
