@@ -14,10 +14,9 @@ const navbar = () => {
             <NavLink className="navBar--list" to="/bebidas">Bebidas</NavLink>
             <NavLink className="navBar--list" to="/alimentos">Alimentos</NavLink>
           </ul>
-          <NavLink to="/cart">
-            <CartWidget />
+          <NavLink className="container__pathCart" to="/cart">
+            <CartWidget className="container__pathCart--widget"  />
           </NavLink>
-          
       </nav>
   )
 }

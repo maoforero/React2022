@@ -6,9 +6,6 @@ const Footer = () => {
   return (
     <footer className='container__footer'>
     <div className="cointer__footer__description">
-        <div className="footer__description--logo">
-            <img src={logo256} alt="logo starbucks"/>
-        </div>
         <div className="footer__description__info">
             <p>React project focused on the creation of a virtual store that mimics Starbucks. All its structure was developed during the React course at CoderHouse. </p>
         </div>

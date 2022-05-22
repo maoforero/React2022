@@ -1,7 +1,29 @@
+.container__cartWidget {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
 .icon--cartWidget {
   height: 25px;
-  margin-right: 20px;
   margin-top: 10px;
+  text-decoration: none;
   width: 25px;
+}
+
+.counter--cartWidget {
+  color: white;
+  text-decoration: none;
 }
 /*# sourceMappingURL=cartWidget.css.map */

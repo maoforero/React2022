@@ -1,4 +1,6 @@
 .container__footer {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   color: red;
   background-color: #27ae60;
   display: -webkit-box;
@@ -8,20 +10,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   justify-self: flex-end;
-  height: 275px;
+  height: 20vh;
   margin-top: 30px;
   width: 100%;
 }
 
 .cointer__footer__description {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70%;
   margin: 20px 0 10px 25px;
   padding: 10px;
   width: 25vw;
@@ -43,7 +47,7 @@
 .footer__description__info p {
   color: white;
   text-align: justify;
-  font-size: 16px;
+  font-size: 1.6rem;
   width: 35vh;
 }
 
@@ -69,7 +73,7 @@
 
 .cointer__footer__team a {
   color: white;
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-top: 3px;
   text-decoration: none;
 }
@@ -82,7 +86,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 16px;
+  font-size: 1.6rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -97,7 +101,7 @@
 
 .cointer__footer__media a {
   color: white;
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-top: 3px;
   text-decoration: none;
 }

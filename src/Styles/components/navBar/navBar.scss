@@ -30,7 +30,7 @@ $font-stack:Helvetica, sans-serif;
   align-items: center;
   color: white;
   display: flex;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   height: 100%;
   justify-items: center;
   list-style: none;
@@ -49,4 +49,15 @@ $font-stack:Helvetica, sans-serif;
   .navBar--list{
     width: 50px;
   }
+}
+
+.container__pathCart{
+  align-self: center;
+  height: auto;
+  text-align: start;
+  width: 100px;
+}
+
+.container__pathCart--widget{
+  text-decoration: none;
 }
