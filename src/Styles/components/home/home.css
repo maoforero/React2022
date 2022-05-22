@@ -41,7 +41,7 @@
 
 .mainBanner--title {
   font-weight: 700;
-  font-size: 7rem;
+  font-size: 5rem;
   padding: 10px;
   text-align: center;
   width: -webkit-fit-content;
@@ -71,11 +71,20 @@
   border-radius: 25px;
   background-color: #077b55;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.2rem;
   height: 130%;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   width: 57%;
+}
+
+.buttonMore {
+  margin: 5px 15px 5px;
+}
+
+.container__buttonMore:active {
+  background-color: #85c3a4;
+  color: #077b55;
 }
 /*# sourceMappingURL=home.css.map */
