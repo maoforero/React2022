@@ -14,6 +14,7 @@ const [buy, setBuy] = useState({});
 
 const { cart, total } = useContext(CartContext);
 
+
 const db = getFirestore();
 
 const ordersRef = query(collection(db, 'orders'));

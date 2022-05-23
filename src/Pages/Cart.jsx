@@ -12,10 +12,10 @@ const Cart = () => {
 
   return (
     <div className='container__pageCart'>
-      <h1>Carrito</h1>        
+      <h1 className='container__pageCart--title'>Carrito</h1>        
     {
       total <= 0 ?
-      <h2>No hay productos en el carrito</h2> : 
+      <h2 className='container__pageCart--info'>No hay productos en el carrito</h2> : 
       
       cart.map(item => (
         <ItemCart

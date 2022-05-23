@@ -1,3 +1,18 @@
+.container__element{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 25px;
+  width: fit-content;
+}
+
+.container__element--title{
+  font-size: 4.7rem;
+  margin: 0 auto;
+}
+
 .itemList--mainTitle{
   align-items: center;
   display: flex;

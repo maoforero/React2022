@@ -10,6 +10,18 @@
   width: 100%;
 }
 
+.container__pageCart--title {
+  font-size: 3.7rem;
+  margin-left: 65px;
+}
+
+.container__pageCart--info {
+  font-size: 2.7rem;
+  margin-left: 65px;
+  -webkit-text-decoration: underline dotted red;
+          text-decoration: underline dotted red;
+}
+
 .container__ItemCart {
   background-color: #F9F6F7;
   border-radius: 25px;

@@ -60,7 +60,7 @@ function Count ({stock, item}) {
               countTotal(count);
             }}
           >
-            Add to Cart
+            Agregar
           </button>
         </Link>
       </div>
