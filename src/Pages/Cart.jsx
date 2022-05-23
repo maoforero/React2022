@@ -8,10 +8,10 @@ const Cart = () => {
   const { total } = useContext(CartContext);
   const { cart } = useContext(CartContext);
   const { clearCart } = useContext(CartContext);
-
+  const { countTotal } = useContext(CartContext);
 
   return (
-    <div>
+    <div className='container__pageCart'>
       <h1>Carrito</h1>        
     {
       total <= 0 ?
@@ -27,10 +27,10 @@ const Cart = () => {
         />
       ))
     }
-        <div>
-          <button onClick={clearCart}>Delete All</button>
-          <button className='buttonBuyAll'>
-            <Link to={'/form'}>Comprar</Link>
+        <div className='container__buttonCart'>
+          <button onClick={clearCart} className="buttonDeleteAll">Borrar todo</button>
+          <button className='buttonBuyAll' disabled={countTotal <= 0}>
+            <Link to={'/form'} className="buttonBuyAl--link" disabled={countTotal <= 0}>Comprar</Link>
           </button>
         </div>
     </div>

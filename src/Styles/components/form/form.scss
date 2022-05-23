@@ -1,0 +1,59 @@
+.container__form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+//forms
+
+
+.form--nameInput:required, .form--nameEmail:required, .form--nameNumber:required{
+  border: 1px solid #000;
+}
+
+.form--nameInput:invalid, .form--nameEmail:invalid, .form--nameNumber:invalid{
+  border: 2px dashed #e85057;
+}
+
+.form--nameInput:valid, .form--nameEmail:valid, .form--nameNumber:valid{
+  border: 1px solid #3fada9;
+}
+
+
+.container__form--nameInput, .container__form--nameEmail, .container__form--nameNumber{
+  align-items: center;
+  background-color: #F9F6F7;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  justify-self: flex-start;
+  margin: 25px 65px;
+  width: 80%;
+}
+
+
+.form--nameInput, .form--nameEmail, .form--nameNumber{
+  height: 22px;
+  margin: 10px 20px;
+  width: 200px;
+}
+
+
+//button
+
+.form--buttonBuy{
+  background-color: #097b50;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #F9F6F7;
+  
+  height: 30px;
+  margin: 0 auto;
+  width: 30%;
+}
+
+.form--buttonBuy:hover{
+  background-color: #85c3a4;
+  color: #097b50;
+}

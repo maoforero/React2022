@@ -1,4 +1,13 @@
+.container__pageCart{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
 .container__ItemCart{
+  background-color: #F9F6F7;
+  border-radius: 25px;
   display: flex;
   flex-direction: row;
   margin: 25px;
@@ -6,4 +15,83 @@
 
 .container__ItemCart--title, .container__ItemCart--price, .container__ItemCart--quantity {
   margin: 10px;
+}
+
+.container__ItemCart{
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: center;
+  width: 100%;
+}
+
+//titles
+.container__ItemCart--title, .container__ItemCart--price, .container__ItemCart--quantity {
+  font-size: 2rem;
+  margin: 10px 45px;
+  padding: 15px;
+}
+
+
+.ItemCart--title, .ItemCart--price--title, .ItemCart--quantity--title{
+  margin-bottom: 20px;
+}
+
+//content
+
+.itemCart--title, .itemCart--price, .itemCart--quantity{
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+//buttons
+
+.itemCart--deleteItem{
+  align-items: center;
+  align-self: center;
+  background-color: #077b55;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: center;
+  height: 30px;
+  width: 90px;
+}
+
+.container__buttonCart{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.buttonDeleteAll, .buttonBuyAll{
+  align-items: center;
+  align-self: center;
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: center;
+  height: 30px;
+  width: 111px;
+}
+
+.buttonDeleteAll{
+  background-color: #F9F6F7;
+  color: #097b50;
+}
+
+.buttonBuyAll{
+  background-color: #077b55;
+  color: white;
+}
+
+.buttonBuyAl--link{
+  color: white;
+  text-decoration: none;
 }

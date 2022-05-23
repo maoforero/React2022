@@ -2,6 +2,8 @@ import React, { useEffect, useState, useContext } from 'react';
 import { addDoc, collection, getDocs, getFirestore, query } from 'firebase/firestore';
 import { CartContext } from '../../Context/CartContext';
 
+import '../../Styles/components/form/form.css';
+
 export default function Form(){
 
 
@@ -79,44 +81,53 @@ function terminarCompra(){
 }
 
   return (
-    <div>
+    <div className='container__form'>
 
-      <h1>Formulario de compra:</h1>
-      <p>Para finalizar su compra por favor complete los siguientes datos.</p>
+      <h1 className='container__form--mainTitle'>Formulario de compra:</h1>
+      <p className='container__form--mainText'>Para finalizar su compra por favor complete los siguientes datos.</p>
       <br></br>
 
-      <label> Nombre:
+      <label className='container__form--nameInput'> Nombre:
         <input 
           type={'text'}
           value={name}
           onChange={
             (e) => setName(e.target.value)
           }
+          className='form--nameInput'
+          required
         />
       </label>
 
-      <label>Correo:
+      <label className='container__form--nameEmail'>Correo:
           <input
           type={'email'} 
           value={email}
           onChange={
             (e) => setEmail(e.target.value)
           }
+          className='form--nameEmail'
+          placeholder="jhondoe@example.com"
+          size="64"
+          maxlength="64"
+          required
           />
       </label>
 
-      <label>Teléfono:
+      <label className='container__form--nameNumber'>Teléfono:
         <input
         type={'number'}
         value={cellphone}
         onChange={
           (e) => setCellphone(e.target.value)
         }
+        className='form--nameNumber'
+        required
         />
       </label>
 
 
-      <button onClick={() => terminarCompra()}>Comprar</button>
+      <button className='form--buttonBuy' onClick={() => terminarCompra()}>Finalizar compra</button>
     </div>
   )
 }

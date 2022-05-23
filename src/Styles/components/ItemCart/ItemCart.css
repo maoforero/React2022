@@ -1,4 +1,18 @@
+.container__pageCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
 .container__ItemCart {
+  background-color: #F9F6F7;
+  border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,5 +25,107 @@
 
 .container__ItemCart--title, .container__ItemCart--price, .container__ItemCart--quantity {
   margin: 10px;
+}
+
+.container__ItemCart {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+  width: 100%;
+}
+
+.container__ItemCart--title, .container__ItemCart--price, .container__ItemCart--quantity {
+  font-size: 2rem;
+  margin: 10px 45px;
+  padding: 15px;
+}
+
+.ItemCart--title, .ItemCart--price--title, .ItemCart--quantity--title {
+  margin-bottom: 20px;
+}
+
+.itemCart--title, .itemCart--price, .itemCart--quantity {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.itemCart--deleteItem {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-color: #077b55;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+  width: 90px;
+}
+
+.container__buttonCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.buttonDeleteAll, .buttonBuyAll {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: none;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+  width: 111px;
+}
+
+.buttonDeleteAll {
+  background-color: #F9F6F7;
+  color: #097b50;
+}
+
+.buttonBuyAll {
+  background-color: #077b55;
+  color: white;
+}
+
+.buttonBuyAl--link {
+  color: white;
+  text-decoration: none;
 }
 /*# sourceMappingURL=ItemCart.css.map */
