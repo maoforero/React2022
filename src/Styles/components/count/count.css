@@ -30,7 +30,80 @@
   width: 100%;
 }
 
-#button--Cart {
+.counter {
+  font-size: 1.5rem;
+}
+
+.counter--buttons {
+  background-color: #077b55;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 30px;
+  width: 90px;
+}
+
+.button--actionItem {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: transparent;
+  border: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  width: 50%;
+}
+
+.button--actionItem:active {
+  color: #85c3a4;
+}
+
+.Cart--Button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.Cart--Button--Link {
+  width: 80%;
+}
+
+.button--cart:disabled {
+  background-color: #85c3a4;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: none;
+  height: 30px;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.button--cart {
+  background-color: #097b50;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  font-size: 1.5rem;
   margin-top: 5px;
   width: 100%;
 }

@@ -11,11 +11,11 @@ function Item({id, name, price, image}) {
       </div>
       <div className="container__item--info">
         <h2>{name}</h2>
-        <p>{price}</p>
+        <p>${price}</p>
       </div>
       <div className="container__buttonItemDetail">
         <button className='buttonItemDetail'>
-          <Link to={`/menu/${id}`}>Details</Link>
+          <Link to={`/menu/${id}`} className="buttonItemDetail--link">Detalles</Link>
         </button>
       </div>
     </div>

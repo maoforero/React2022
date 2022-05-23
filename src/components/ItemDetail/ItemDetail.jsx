@@ -12,17 +12,16 @@ const ItemDetail = (props) => {
       <div className="container__ItemDetail--img">
         <img src={idItem.img} alt="" className='ItemDetail--img'/>
       </div>
-      <div className="container__ItemDetail--info">
-        <h6 className="ItemDetail--infoTitle">{idItem.name}</h6>
-        <p className="ItemDetail--infoDescription">{idItem.info}</p>
-        <p className="ItemDetail--infoPrice">{idItem.price}</p>
-      </div>
-      <div className="ItemDetail--buttonsIteractions">
-        <div className="countInteractions">
-          <p className="count">{idItem.info}</p>
+      <div className="container--itemDetailInfo">
+        <div className="container__ItemDetail--info">
+          <h6 className="ItemDetail--infoTitle">{idItem.name}</h6>
+          <p className="ItemDetail--infoPrice">${idItem.price}</p>
+          <p className="ItemDetail--infoDescription">{idItem.info}</p>
         </div>
-        <div className="buttonsInteractions">
-          <Count stock={idItem.stock} item={idItem}/>
+        <div className="ItemDetail--buttonsIteractions">
+          <div className="countInteractions">
+            <Count stock={idItem.stock} item={idItem}/>
+          </div>
         </div>
       </div>
     </div>
